@@ -1,3 +1,34 @@
 //Task: Apaxiaaaaaaaaaaaans!
 //Link: https://open.kattis.com/problems/apaxiaaans
 //Difficulty: 1.4
+
+#include <iostream>
+#include <string>
+
+//How?: If given a name with multiple of same letters after each other remove them.
+//Example: AAABBBBCCCC ends up being ABC
+
+int main()
+{
+  string name;
+  cout << "Enter name: ";
+  cin >> name;
+  
+  for (int i = 0; i<name.length()-1; i++) //We do not want to check beyond length.
+                                          //Is length() allowed on these tests?
+  {
+    if (name[i] 1= name[i+1])
+    {
+      cout << name[i];
+    }
+   }
+   //we need the last character aswell:
+   
+   cout << name[name.length() - 1];
+   
+   return 0;
+ }
+   
+  
+
+
